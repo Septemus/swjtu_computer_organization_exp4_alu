@@ -1,12 +1,12 @@
-Analysis & Synthesis Status : Successful - Thu Apr 27 09:08:59 2023
+Analysis & Synthesis Status : Successful - Thu Apr 27 09:26:23 2023
 Quartus II 64-Bit Version : 13.1.0 Build 162 10/23/2013 SJ Full Version
 Revision Name : exp4
 Top-level Entity Name : exp4
 Family : Cyclone III
-Total logic elements : 233
-    Total combinational functions : 201
-    Dedicated logic registers : 89
-Total registers : 89
+Total logic elements : 235
+    Total combinational functions : 219
+    Dedicated logic registers : 91
+Total registers : 91
 Total pins : 88
 Total virtual pins : 0
 Total memory bits : 0

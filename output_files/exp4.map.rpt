@@ -1,5 +1,5 @@
 Analysis & Synthesis report for exp4
-Thu Apr 27 09:08:59 2023
+Thu Apr 27 09:26:23 2023
 Quartus II 64-Bit Version 13.1.0 Build 162 10/23/2013 SJ Full Version
 
 
@@ -45,15 +45,15 @@ applicable agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Apr 27 09:08:59 2023       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 27 09:26:23 2023       ;
 ; Quartus II 64-Bit Version          ; 13.1.0 Build 162 10/23/2013 SJ Full Version ;
 ; Revision Name                      ; exp4                                        ;
 ; Top-level Entity Name              ; exp4                                        ;
 ; Family                             ; Cyclone III                                 ;
-; Total logic elements               ; 233                                         ;
-;     Total combinational functions  ; 201                                         ;
-;     Dedicated logic registers      ; 89                                          ;
-; Total registers                    ; 89                                          ;
+; Total logic elements               ; 235                                         ;
+;     Total combinational functions  ; 219                                         ;
+;     Dedicated logic registers      ; 91                                          ;
+; Total registers                    ; 91                                          ;
 ; Total pins                         ; 88                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
@@ -183,28 +183,28 @@ applicable agreement for further details.
 +---------------------------------------------+-----------+
 ; Resource                                    ; Usage     ;
 +---------------------------------------------+-----------+
-; Estimated Total logic elements              ; 233       ;
+; Estimated Total logic elements              ; 235       ;
 ;                                             ;           ;
-; Total combinational functions               ; 201       ;
+; Total combinational functions               ; 219       ;
 ; Logic element usage by number of LUT inputs ;           ;
-;     -- 4 input functions                    ; 70        ;
-;     -- 3 input functions                    ; 71        ;
+;     -- 4 input functions                    ; 87        ;
+;     -- 3 input functions                    ; 72        ;
 ;     -- <=2 input functions                  ; 60        ;
 ;                                             ;           ;
 ; Logic elements by mode                      ;           ;
-;     -- normal mode                          ; 161       ;
+;     -- normal mode                          ; 179       ;
 ;     -- arithmetic mode                      ; 40        ;
 ;                                             ;           ;
-; Total registers                             ; 89        ;
-;     -- Dedicated logic registers            ; 89        ;
+; Total registers                             ; 91        ;
+;     -- Dedicated logic registers            ; 91        ;
 ;     -- I/O registers                        ; 0         ;
 ;                                             ;           ;
 ; I/O pins                                    ; 88        ;
 ; Embedded Multiplier 9-bit elements          ; 0         ;
 ; Maximum fan-out node                        ; clk~input ;
-; Maximum fan-out                             ; 89        ;
-; Total fan-out                               ; 1004      ;
-; Average fan-out                             ; 2.15      ;
+; Maximum fan-out                             ; 91        ;
+; Total fan-out                               ; 1089      ;
+; Average fan-out                             ; 2.24      ;
 +---------------------------------------------+-----------+
 
 
@@ -213,8 +213,8 @@ applicable agreement for further details.
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------+
 ; Compilation Hierarchy Node ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name       ; Library Name ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------+
-; |exp4                      ; 201 (60)          ; 89 (9)       ; 0           ; 0            ; 0       ; 0         ; 88   ; 0            ; |exp4                     ; work         ;
-;    |keymodule:km|          ; 108 (108)         ; 57 (57)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp4|keymodule:km        ; work         ;
+; |exp4                      ; 219 (60)          ; 91 (9)       ; 0           ; 0            ; 0       ; 0         ; 88   ; 0            ; |exp4                     ; work         ;
+;    |keymodule:km|          ; 126 (126)         ; 59 (59)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp4|keymodule:km        ; work         ;
 ;    |midware:mw|            ; 0 (0)             ; 16 (16)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp4|midware:mw          ; work         ;
 ;    |segment_displays:sd|   ; 33 (33)           ; 7 (7)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |exp4|segment_displays:sd ; work         ;
 +----------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+---------------------------+--------------+
@@ -233,9 +233,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 ; ans[14]~reg0                          ; Stuck at GND due to stuck port data_in ;
 ; ans[15]~reg0                          ; Stuck at GND due to stuck port data_in ;
 ; ans[9]~reg0                           ; Stuck at GND due to stuck port data_in ;
-; keymodule:km|cnt[0]                   ; Merged with segment_displays:sd|sel[0] ;
-; keymodule:km|cnt[1]                   ; Merged with segment_displays:sd|sel[1] ;
-; Total Number of Removed Registers = 9 ;                                        ;
+; Total Number of Removed Registers = 7 ;                                        ;
 +---------------------------------------+----------------------------------------+
 
 
@@ -244,12 +242,12 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 89    ;
+; Total registers                              ; 91    ;
 ; Number of registers using Synchronous Clear  ; 6     ;
 ; Number of registers using Synchronous Load   ; 6     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 47    ;
+; Number of registers using Clock Enable       ; 58    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -259,8 +257,8 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------+---------+
 ; Inverted Register                      ; Fan out ;
 +----------------------------------------+---------+
-; keymodule:km|count_num[0]              ; 3       ;
 ; keymodule:km|num[4]                    ; 1       ;
+; keymodule:km|count_num[0]              ; 4       ;
 ; Total number of inverted registers = 2 ;         ;
 +----------------------------------------+---------+
 
@@ -270,9 +268,10 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output       ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
-; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |exp4|keymodule:km|count_num[8]  ;
+; 3:1                ; 31 bits   ; 62 LEs        ; 31 LEs               ; 31 LEs                 ; Yes        ; |exp4|keymodule:km|count_num[31] ;
 ; 8:1                ; 3 bits    ; 15 LEs        ; 12 LEs               ; 3 LEs                  ; Yes        ; |exp4|segment_displays:sd|num[3] ;
 ; 8:1                ; 6 bits    ; 30 LEs        ; 24 LEs               ; 6 LEs                  ; Yes        ; |exp4|ans[1]~reg0                ;
+; 4:1                ; 16 bits   ; 32 LEs        ; 16 LEs               ; 16 LEs                 ; Yes        ; |exp4|keymodule:km|out[7]        ;
 ; 257:1              ; 4 bits    ; 684 LEs       ; 48 LEs               ; 636 LEs                ; No         ; |exp4|keymodule:km|num           ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------------+
 
@@ -282,7 +281,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:02     ;
+; Top            ; 00:00:01     ;
 +----------------+--------------+
 
 
@@ -292,7 +291,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.1.0 Build 162 10/23/2013 SJ Full Version
-    Info: Processing started: Thu Apr 27 09:08:54 2023
+    Info: Processing started: Thu Apr 27 09:26:20 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off exp4 -c exp4
 Info (11104): Parallel Compilation has detected 8 hyper-threaded processors. However, the extra hyper-threaded processors will not be used by default. Parallel Compilation will use 4 of the 4 physical processors detected instead.
 Info (12021): Found 1 design units, including 1 entities, in source file segment_displays.v
@@ -320,11 +319,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file logic_r
 Info (12021): Found 1 design units, including 1 entities, in source file arith_right1.v
     Info (12023): Found entity 1: arith_right1
 Info (12127): Elaborating entity "exp4" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at exp4.v(47): truncated value with size 47 to match size of target (16)
+Warning (10230): Verilog HDL assignment warning at exp4.v(19): truncated value with size 32 to match size of target (1)
+Warning (10230): Verilog HDL assignment warning at exp4.v(48): truncated value with size 47 to match size of target (16)
 Info (12128): Elaborating entity "keymodule" for hierarchy "keymodule:km"
 Info (12128): Elaborating entity "midware" for hierarchy "midware:mw"
 Info (12128): Elaborating entity "segment_displays" for hierarchy "segment_displays:sd"
-Warning (10230): Verilog HDL assignment warning at segment_displays.v(9): truncated value with size 32 to match size of target (3)
+Warning (10230): Verilog HDL assignment warning at segment_displays.v(10): truncated value with size 32 to match size of target (3)
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "ans[9]" is stuck at GND
     Warning (13410): Pin "ans[10]" is stuck at GND
@@ -345,15 +345,15 @@ Info (286030): Timing-Driven Synthesis is running
 Info (144001): Generated suppressed messages file C:/Computer_Organization/exp4/output_files/exp4.map.smsg
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 326 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 328 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 9 input pins
     Info (21059): Implemented 79 output pins
-    Info (21061): Implemented 238 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 18 warnings
+    Info (21061): Implemented 240 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
     Info: Peak virtual memory: 4644 megabytes
-    Info: Processing ended: Thu Apr 27 09:08:59 2023
-    Info: Elapsed time: 00:00:05
-    Info: Total CPU time (on all processors): 00:00:04
+    Info: Processing ended: Thu Apr 27 09:26:23 2023
+    Info: Elapsed time: 00:00:03
+    Info: Total CPU time (on all processors): 00:00:03
 
 
 +------------------------------------------+

@@ -2,7 +2,8 @@ module keymodule(
 	input clk,
 	input [3:0] KEY_R,
 	output reg[3:0] KEY_C = 4'b0111,
-	output reg[15:0] out= 16'hxxxx
+	output reg[15:0] out= 16'hxxxx,
+	input clr
 //	output reg[2:0] press_times=3'b000
 );
 	reg [1:0] cnt = 2'b0;
@@ -16,6 +17,11 @@ begin
 //			out<=16'h0000;
 //		end
 //		else
+		if(clr)
+		begin
+			out<=16'h0000;
+		end
+		else
 		begin
 			cnt = cnt + 1'b1;
 			case (cnt)
