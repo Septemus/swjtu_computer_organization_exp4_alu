@@ -1,0 +1,7 @@
+module logic_or(
+	input [7:0] X,
+	input [7:0] Y,
+	output [15:0] ans
+);
+
+endmodule
