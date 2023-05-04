@@ -324,9 +324,9 @@ endmodule
 
 > # 3 引脚分配
 
-<img src="/images/pin4.png" width="80%">
+<img src="/images/pin.png" width="80%">
 
 > # 4 仿真波形
 
-<img src="/images/wvf4.png" width="80%">
+<img src="/images/wvf.png" width="80%">
 
